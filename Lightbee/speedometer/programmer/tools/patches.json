@@ -1,0 +1,61 @@
+[
+    {   
+        "name": "dont_store_speed",     
+        "description" : "dont store/ load max speed",
+        "data" : [
+            {
+                "offset": "0x2EBD",
+                "orgdata": "8A 11",
+                "newdata": "F1 00"
+            },
+            {
+                "offset": "0x45E5",
+                "orgdata": "E5 88 FB",
+                "newdata": "00 00 00"
+            }
+        ]
+    },
+    {        
+        "name": "remove_maxspeed",
+        "description" : "remove the max speed feature completely",
+        "data" : [
+            {
+                "offset": "0x3D1D",
+                "orgdata": "8F 22 04",
+                "newdata": "ED 32 3d"
+            }
+        ]
+    },    
+    {        
+        "name": "remove_surron_label",
+        "description" : "removes the surron label from the speedometer",
+        "data" : [
+            {
+                "offset": "0x3A07",
+                "orgdata": "6C 01",
+                "newdata": "5c fe"
+            },
+            {
+                "offset": "3ABF",
+                "orgdata": "6C 01",
+                "newdata": "5c fe"
+            }
+        ]
+    },    
+    {        
+        "name": "remove_bottomline",
+        "description" : "removes the bottomline from the speedometer",
+        "data" : [
+            {
+                "offset": "0x3A0F",
+                "orgdata": "6C 01",
+                "newdata": "5c fe"
+            },
+            {
+                "offset": "0x3AC7",
+                "orgdata": "6C 01",
+                "newdata": "5c fe"
+            }
+        ]
+    }
+]
